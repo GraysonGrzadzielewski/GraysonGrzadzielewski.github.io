@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>📨 Contact Me</title>
+        <link rel="stylesheet" type="text/css" href="/global.css">
+        <link rel="stylesheet" type="text/css" href="/contact/contact.css">
+
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="topnav-title">
+                <span>Grayson Grzadzielewski</span>
+            </div>
+            <div><span></span></div>
+            <div class="topnav-nav">
+                <nav>
+                    <a href="/index.html">Home</a>
+                    <span>|</span>
+                    <a href="/projects/projects.html">Projects</a>
+                    <span>|</span>
+                    <a href="/blog/blog.html">Blog</a>
+                    <span>|</span>
+                    <a href="/contact/contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2>Send Me an Email!</h2>
+            <!--Based on https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server-->
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbw4jk6V9IAw1x7kZsvwo0StDXOh8AX9XD9btPkOwfCDLJZKMnkMLoPCK4xket0euQ7YQA/exec">
+                <div class="form-elements">
+                    <fieldset class="pure-group">
+                        <label for="name">Name: </label>
+                        <input id="name" name="name" placeholder="Your name" />
+                    </fieldset>
+
+                    <fieldset class="pure-group">
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" rows="10" placeholder="Job offer goes here..."></textarea>
+                    </fieldset>
+
+                    <fieldset class="pure-group">
+                        <label for="email">Your Email:</label>
+                        <input id="email" name="email" type="email" value=""required placeholder="your.name@email.net"/>
+                    </fieldset>
+
+                    <fieldset class="pure-group" style="display: none;">
+                        <!--Don't care, keeping it because I'll get confused otherwise.-->
+                        <label for="color">Favourite Color: </label>
+                        <input id="color" name="color" value="green"/>
+                    </fieldset>
+
+                    <fieldset class="pure-group honeypot-field" style="display: none;">
+                        <label for="honeypot">Spam Protection</label>
+                        <input id="honeypot" name="honeypot" type="text" value="" />
+                    </fieldset>
+
+                    <button class="button-success pure-button button-xlarge">
+                        <img src="/icons/email.svg">&nbsp;Send
+                    </button>
+                </div>
+
+                <div class="thankyou_message" style="display:none;">
+                    <h2><em>Thanks for contacting me!</em></h2>
+                    <h2>I'll get back to you as soon as I can.</h2>
+                </div>
+            </form>
+            <script data-cfasync="false" type="text/javascript" src="/form-submission-handler.js"></script>
+        </div>
+    </body>
+</html>

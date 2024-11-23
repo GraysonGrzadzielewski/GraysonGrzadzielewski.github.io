@@ -1,0 +1,40 @@
+textarea {
+width: 100%;
+}
+fieldset {
+    border: none;
+}
+form {
+    margin: 10px auto;
+    padding: 40px;
+    background: #FDFFFC;
+    border-color: #FDFFFC;
+    border-style:solid;
+    border-radius: 10px;
+    color: #08090A;
+    min-width: 500px;
+    width: 50%
+}
+.button-success {
+color: white;
+border: none;
+background: #0F8B8D;
+}
+.button-xlarge {
+font-size: 125%;
+}
+button img {
+    width: 20px
+}
+button {
+float: right;
+}
+button:hover {
+    background: #143642;
+}
+#name, #email {
+width: 50%;
+}
+.honeypot-field {
+display: none;
+}
