@@ -1,0 +1,72 @@
+/**https://coolors.co/08090a-14591d-14cc60-f34213-fdfffc
+https://coolors.co/dad2d8-143642-0f8b8d-ec9a29-a8201a
+*/
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    background-color: #40434E;
+}
+body {
+    color: #DAD2D8;
+    margin: 0px;
+}
+
+.topnav {
+    background-color: #080705;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    width: 100%;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.topnav div {
+    display: inline;
+    padding: 10px 15px;
+    margin: 0;
+}
+.topnav-title{
+    font-size: 20px;
+}
+.topnav nav a {
+    padding: 5px 10px;
+}
+.topnav nav a:hover {
+    color: #EC9A29;
+}
+.topnav nav span {
+    margin: 5px;
+}
+
+.main-content{
+    width: 70%;
+    min-width: 550px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+article{
+    text-align: justify;
+    display: block;
+}
+
+.contact {
+    text-align: center;
+    padding: 25px;
+}
+.contact-info {
+    display: inline;
+    margin: 0;
+    padding: 25px;
+}
+.contact-info a {
+    text-decoration: none;
+}
+.contact-info img:hover {
+    filter: invert(50%);
+}
