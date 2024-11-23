@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>📨 Contact Me</title>
         <link rel="stylesheet" type="text/css" href="/global.css">
+        <link rel="stylesheet" type="text/css" href="/contact.css">
 
     </head>
     <body>
@@ -25,8 +26,42 @@
             </div>
         </div>
         <div class="main-content">
-            <article>
-            </article>
+            <!--Based on https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server-->
+            <div class="contact-form">
+                <form clas="gform" method="POST" data-email="noreply@notreal.edu" action="https://script.google.com/macros/s/AKfycbw4jk6V9IAw1x7kZsvwo0StDXOh8AX9XD9btPkOwfCDLJZKMnkMLoPCK4xket0euQ7YQA/exec">
+                    <fieldset class="form-field">
+                        <label for="name">Name: </label>
+                        <input id="name" name="name" placeholder="Your Name Here"/>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" rows=10 placeholder="Job Offer Goes Here"></textarea>
+                    </fieldset>
+
+                    <fieldset class="form-field">
+                        <label for="email"><em>Your</em> Email Address:</label>
+                        <input id="email" name="email" type="email" value="" required placeholder="your.name@respected-company.com"/>
+                    </fieldset>
+
+                    <fieldset class="form-field honeypot">
+                        <label for="honeypot"><em>Secret field!</em> 🐿</label>
+                        <input name="honeypot" type="text" value="blue" placeholder="" />
+                    </fieldset>
+
+                    <fieldset class="form-field honeypot">
+                        <label for="color">Secret color</label>
+                        <input id="color" name="color" value="" placeholder="green">
+                    </fieldset>
+
+                    <button class="button"><i>Send</i></button>
+
+                    <div class="thankyou-message" style="display: none;">
+                        <h2>Thank you for contacting me! While you wait for a response why not look at my github or linkedin!</h2>
+                    </div>
+                </form>
+                <script data-cfasync="false" src="/form-submission-handler.js"></script>
+            </div>
         </div>
     </body>
 </html>
