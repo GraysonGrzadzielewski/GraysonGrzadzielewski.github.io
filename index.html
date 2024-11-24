@@ -3,40 +3,108 @@
     <head>
         <meta charset="UTF-8">
         <title>👋 Home of Grayson Grzadzielewski</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="/global.css">
     </head>
 
     <body>
         <div class="topnav">
             <div class="topnav-title">
-                <span>Grayson Grzadzielewski</span>
+                <a href="/index.html">
+                    <span>Grayson Grzadzielewski</span>
+                </a>
             </div>
             <div><span></span></div>
             <div class="topnav-nav">
                 <nav>
-                    <a>Home</a>
+                    <a href="/index.html">Home</a>
                     <span>|</span>
-                    <a>About</a>
+                    <a href="/projects/projects.html">Projects</a>
                     <span>|</span>
-                    <a>Projects</a>
+                    <a href="/blog/blog.html">Blog</a>
                     <span>|</span>
-                    <a>Blog</a>
-                    <span>|</span>
-                    <a>Contact</a>
+                    <a href="/contact/contact.html">Contact</a>
                 </nav>
             </div>
         </div>
         <div class="main-content">
             <article>
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>
+                    My name is Grayson Grzadzielewski and I'm a skilled Devops engineer 
+                    with over <span id="years-worked">5</span> years of experience. I've 
+                    worked extensively with Openshift and Kubernetes, Identity Provider 
+                    infrastructure, containerization and DevOps pipeline tools, and 
+                    administrating linux servers.
+                </p>
+                <h3>Key Skills</h3>
+                <ul>
+                    <li>Openshift/Kubernetes Administration
+                        <ul>
+                            <li>RHEL Administration</li>
+                        </ul>
+                    </li>
+                    <li>Python, Bash, and PowerShell scripting
+                        <ul>
+                            <li>Experience in Java, JavaScript, C#, and PHP</li>
+                        </ul>
+                    </li>
+                    <li>Building and Configuring complex DevOps pipelines for container builds
+                        <ul>
+                            <li>Jenkins, Nexus, buildah/podman/skopeo, Harbor, ACS/Stackrox compliance, GitLab CI/CD</li>
+                        </ul>
+                    </li>
+                    <li>Managing IDP and AD configuration, user/group assignments, and RBACs across multiple clusters
+                        <ul>
+                            <li>Including authentication to internal APIs and tools like Gitea</li>
+                        </ul>
+                    </li>
+                    <li>Maintaining and tailoring Helm charts to environmental and customer requirements</li>
+                    <li>Maintaining IaC for multiple EKS instances and EC2 bastions</li>
+                    <li>Enthusaisticly written documentation</li>
+                </ul>
+                <h3>Work Experience</h3>
+                <p>
+                    Beginning as an intern for Ace Info Solutions's PaaS team in 2019,
+                    I worked with engineers to develop reporting APIs, maintained internal
+                    tools written in Python, and migrated existing infrastructure to 
+                    containerized infrastructure.
+                </p>
+                <p>
+                    After my graduation from Shepherd University in 2020, I was hired as 
+                    a full time System Engineer supporting the early stages of the PaaS 
+                    3.0(later Srvci and CCS) project. I quickly transitioned into a 
+                    Subject Matter Expert role and took on additional responsibilities 
+                    such as installing and configuring the full DevOps pipeline, 
+                    ensuring replication and pairty of infrastructure in a multi-cluster
+                    /multi-network environment with IaC, and extensive scripting for 
+                    automating routine admin tasks. I also took on responsibility for 
+                    cluster compliance, maintaining Active Directory and Red Hat SSO as 
+                    authentication, cluster RBACs, ownership of all 30+ customer 
+                    available base images, and ownership of all internal Helm charts.
+                </p>
+                <p>
+                    I continued my work through the Ace Info was purchase by Dovel, and 
+                    then the acquisition of Dovel by Guidehouse. When Guidehouse lost 
+                    the bid for the USCG IMS contract to Peraton, I transitioned to the 
+                    new contract as CCS team co-lead where I continued my previous work 
+                    with the addition of reporting and stakeholder communication 
+                    responsibilities.
+                </p>
+                <p>
+                    At Karthik Consulting, as part of the USCG Software Factory project I 
+                    implemented advanced permissions in DevOps tools and EKS clusters and
+                    kept the onboarding process up to date with evolving requirements. I 
+                    maintained multiple components of the GitLab CI/CD pipeline and 
+                    assisted with the install of ACS for ongoing compliance. I was also
+                    responisble for mainatining compiance with ACS scans for eventual ATO.
+                </p>
             </article>
         
             <article>
-                <h2>Contact Me</h2>
+                <h2>Find Me Here</h2>
                 <div class="contact">
                     <div class="contact-info">
-                        <a href="mailto:gegrzadzielewski@gmail.com">
+                        <a href="/contact/contact.html">
                             <img src="icons/email.svg" width="25">
                         </a>
                     </div>
