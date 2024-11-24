@@ -58,10 +58,13 @@ h2 {
     text-align: center;
     font-size: 33px;
 }
-article{
+article {
     text-align: justify;
     display: block;
     font-size: 18px;
+}
+article h3 {
+    text-decoration: underline;
 }
 
 .contact {
