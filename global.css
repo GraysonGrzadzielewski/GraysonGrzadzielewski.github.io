@@ -1,84 +1,54 @@
-/**https://coolors.co/08090a-14591d-14cc60-f34213-fdfffc
-https://coolors.co/dad2d8-143642-0f8b8d-ec9a29-a8201a
-*/
-html {
+* {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
-    background-color: #40434E;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    background-color: #0000A8;
+    height: 100%;
+}
+
 body {
-    color: #DAD2D8;
-    margin: 0px;
-}
-
-.topnav {
-    background-color: #080705;
+    background-color: #c3c3c3;
+    margin: 5px auto 15px;
+    min-width: 640px;
+    min-height: 480px;
+    width: 50%;
+    height: 96%;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
-    top: 0px;
-    width: 100%;
-    position: sticky;
-    justify-content: space-between;
-    align-items: center;
+
     display: flex;
-}
-.topnav div {
-    display: inline;
-    padding: 10px 15px;
-    margin: 0;
-}
-.topnav-title{
-    font-size: 35px;
-}
-.topnav a {
-    padding: 5px 10px;
-}
-.topnav a {
-    text-decoration: none;
-    color: inherit;
-}
-.topnav a:hover {
-    color: #EC9A29;
-}
-.topnav nav span {
-    margin: 5px;
-    font-size: 25px;
-}
-.topnav-nav a {
-    font-size: 25px;
+    flex-direction: column;
 }
 
-.main-content{
-    width: 70%;
-    min-width: 550px;
-    margin: auto;
+aside {
+    width: 30%;
+    float: left;
 }
-h2 {
-    text-align: center;
-    font-size: 33px;
-}
+
 article {
-    text-align: justify;
-    display: block;
-    font-size: 20px;
-}
-article h3 {
-    text-decoration: underline;
+    border-style: ridge;
+    width: calc(70% - 12px);
 }
 
-.contact {
-    text-align: center;
-    padding: 25px;
+.frame {
+    border-style: outset;
+    border-color: grey;
 }
-.contact-info {
-    display: inline;
-    margin: 0;
-    padding: 25px;
+
+.inline-frame {
+    display: inline-block;
+    height: calc(100% - 6px);
 }
-.contact-info a {
-    text-decoration: none;
+
+.block-frame {
+    flex: 1;
 }
-.contact-info img:hover {
-    filter: invert(50%);
+
+#banner {
+    height: 15%;
+    background-color: aliceblue;
+    border-width: 3px;
 }
