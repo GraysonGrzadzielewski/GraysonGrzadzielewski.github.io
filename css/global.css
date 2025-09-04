@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "w95a";
+    src: url("w95fa.woff") format("woff");
+}
+
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: w95a;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -62,19 +67,20 @@ article {
 }
 
 .navbuttons button {
-    width: 100%;
+    width: calc(100% - 1px);
 }
 
 .defaultButton {
     text-align: center;
     align-items: center;
     border: 3px;
-    padding: 4px 20px;
+    padding: 4px;
+    float: left;
     border-style: ridge;
-    font-size: 15pt;
+    font-size: 14pt;
     background-color: #c3c3c3;
-    box-shadow: 0px 0px 1px 1px;
-    margin: 1px;
+    box-shadow:1px 1px 0 ;
+    margin: 0px 0px 1px 0px
 }
 
 .defaultButton:active {
@@ -82,6 +88,13 @@ article {
     border-style: inset;
 }
 
-.defaultButton:hover {
-    background-color: #c0c0c0;
+.motd {
+    text-align: left;
+    padding: 5px 15px 5px;
+    border-style: dotted;
+    border-width: 3px 0;
+    border-color: #808080;
+    display: inline-block;
+    margin: 5px 0;
+    height: 40%
 }
