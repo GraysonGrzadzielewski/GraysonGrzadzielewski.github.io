@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{name}}'s Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <script src="index.js" defer></script>
+    </head>
+
+    <body class="frame">
+        <div id="banner" class="frame"><img src="img/banner_render_quantized.png"></div>
+        <div class="block-frame">
+            <aside class="frame inline-frame">
+                <div class="navbuttons">
+                    <button id="homeButton" class="defaultButton toggleButton">HOME</button>
+                    <button id="aboutButton" class="defaultButton toggleButton">ABOUT</button>
+                    <button id="blogButton" class="defaultButton toggleButton">BLOG</button>
+                    <button id="resumeButton" class="defaultButton toggleButton">RESUME</button>
+                    <button id="contactButton" class="defaultButton toggleButton">CONTACT</button>
+                </div>
+                <div class="motd frame">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </aside>
+            <article class="inline-frame">
+                <div id="homeText" class="articleContent defaultDisplayed">
+                    <p>Dev Home Text</p>
+                </div>
+                <div id="aboutText" class="articleContent defaultHidden">
+                    <p>Dev About Text</p>
+                </div>
+                <div id="blogText" class="articleContent defaultHidden">
+                    <p>Dev Blog Text</p>
+                </div>
+                <div id="resumeText" class="articleContent defaultHidden">
+                    <p>Dev Resume Text</p>
+                </div>
+                <div id="contactText" class="articleContent defaultHidden">
+                    <p>Dev Contact Text</p>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>

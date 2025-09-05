@@ -13,6 +13,7 @@
 html {
     background-color: #018281;
     height: 100%;
+    min-height: 1000px
 }
 
 body {
@@ -83,9 +84,20 @@ article {
     margin: 0px 0px 1px 0px
 }
 
-.defaultButton:active {
+/**
+There's got to be a better way to do this
+*/
+.toggleButton:active {
     background-color: #808080;
     border-style: inset;
+    color: black;
+}
+
+.activeRadioButton:disabled {
+    background-color: #808080;
+    border-style: inset;
+    color: black;
+    font-weight: bold;
 }
 
 .motd {
@@ -96,5 +108,18 @@ article {
     border-color: #808080;
     display: inline-block;
     margin: 5px 0;
-    height: 40%
+    height: 40%;
+    font-size: 12pt;
+}
+
+.articleContent {
+    font-size: 12pt;
+}
+
+.defaultDisplay {
+    display: inline;
+}
+
+.defaultHidden {
+    display: none;
 }
