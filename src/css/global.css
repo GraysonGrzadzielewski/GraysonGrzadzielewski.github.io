@@ -114,12 +114,10 @@ There's got to be a better way to do this
 
 .articleContent {
     font-size: 12pt;
+    display: none;
 }
 
-.defaultDisplay {
+.contentDisplayed {
     display: inline;
 }
 
-.defaultHidden {
-    display: none;
-}

@@ -1,19 +1,25 @@
-/** Button setup */
 const homeButton = document.getElementById("homeButton");
 const aboutButton = document.getElementById("aboutButton");
 const blogButton = document.getElementById("blogButton");
 const resumeButton = document.getElementById("resumeButton");
 const contactButton = document.getElementById("contactButton");
 
-// Default to displaying home
-var activeButton = homeButton;
-activateButton(activeButton);
+const homeContent = document.getElementById("homeContent");
+const aboutContent = document.getElementById("aboutContent");
+const blogContent = document.getElementById("blogContent");
+const resumeContent = document.getElementById("resumeContent");
+const contactContent = document.getElementById("contactContent");
 
-homeButton.addEventListener("click", function(_event){radioButtonToggle(this);});
-aboutButton.addEventListener("click", function(_event){radioButtonToggle(this);});
-blogButton.addEventListener("click", function(_event){radioButtonToggle(this);});
-resumeButton.addEventListener("click", function(_event){radioButtonToggle(this);});
-contactButton.addEventListener("click", function(_event){radioButtonToggle(this);});
+homeButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(homeContent);});
+aboutButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(aboutContent);});
+blogButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(blogContent);});
+resumeButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(resumeContent)});
+contactButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(contactContent)});
+
+// Set active to Home as default. Home content is already being displayed on page
+var activeButton = homeButton;
+var visibleContent = homeContent;
+activateButton(activeButton);
 
 /**
  * Toggle a button to it's active state and untoggle the previously active button.
@@ -31,4 +37,14 @@ function activateButton (buttonObj){
 function deactivateButton (buttonObj){
     buttonObj.disabled = false;
     buttonObj.classList.remove("activeRadioButton");
+}
+
+/**
+ * Toggle content displayed by adding or removing contentDisplayed class.
+ * @param {Obj} contentObj 
+ */
+function contentToggle(contentObj) {
+    visibleContent.classList.remove("contentDisplayed");
+    visibleContent = contentObj;
+    visibleContent.classList.add("contentDisplayed");
 }
