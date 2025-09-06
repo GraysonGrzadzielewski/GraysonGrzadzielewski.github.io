@@ -95,7 +95,7 @@ There's got to be a better way to do this
 .activeRadioButton:disabled {
     background-color: #808080;
     border-style: inset;
-    color: black;
+    color: #c3c3c3;
     font-weight: bold;
 }
 
@@ -107,8 +107,8 @@ There's got to be a better way to do this
     border-color: #808080;
     display: inline-block;
     margin: 5px 0;
-    height: 40%;
-    font-size: 12pt;
+    height: 25%;
+    font-size: 1pt;
 }
 
 .articleContent {
@@ -120,3 +120,25 @@ There's got to be a better way to do this
     display: inline;
 }
 
+.blinkies {
+padding: 5px;
+}
+
+.blinkies .gif {
+    width:48%;
+}
+
+.stamps {
+    border-style: dotted;
+    border-width: 3px 0 0 0;
+    border-color: #808080;
+}
+
+.stamps .gif {
+    width: 40%;
+}
+
+.gif {
+    display: table-cell;
+    padding: 1%;
+}
