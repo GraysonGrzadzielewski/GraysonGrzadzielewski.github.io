@@ -80,23 +80,29 @@ article {
     border-style: ridge;
     font-size: 14pt;
     background-color: #c3c3c3;
-    box-shadow:1px 1px 0 ;
-    margin: 0px 0px 1px 0px
+    box-shadow: 1px 1px 0 ;
+
 }
 
 /**
 There's got to be a better way to do this
 */
 .toggleButton:active {
-    background-color: #808080;
+    background-color: #747474;
     border-style: inset;
     color: black;
+    text-shadow: 1px 1px 1px;
 }
 .activeRadioButton:disabled {
     background-color: #808080;
     border-style: inset;
     color: #c3c3c3;
     font-weight: bold;
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: darkgrey;
+    border-right-color: darkgrey;
+    text-shadow: 0 0 0;
 }
 
 .motd {

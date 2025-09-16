@@ -11,7 +11,6 @@ const resumeContent = document.getElementById("resumeContent");
 const contactContent = document.getElementById("contactContent");
 
 homeButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(homeContent);});
-aboutButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(aboutContent);});
 blogButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(blogContent);});
 resumeButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(resumeContent)});
 contactButton.addEventListener("click", function(_event){radioButtonToggle(this);contentToggle(contactContent)});
